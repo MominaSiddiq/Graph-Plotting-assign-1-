@@ -66,7 +66,7 @@ def plot_graphs(url):
     plt.xlabel('Months')
     plt.ylabel('Rainfall (mm)')
     plt.title('A Box Plot Showing Monthly Rainfall Distribution in the UK')
-    plt.xticks(rotation=45)
+    plt.xticks(rotation = 45)
     plt.grid(True)
    
     # show the plot
