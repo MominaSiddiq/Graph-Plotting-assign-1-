@@ -18,7 +18,7 @@ boxPlotTitle = 'A Box Plot Showing Monthly Rainfall Distribution in the UK'
 histoPlotTitle = 'A Histogram Showing Distribution of Annual Rainfall in the UK'
 
 # defining a function for setting labels and show legends
-def GraphPlotting(title, myXLabel=xLabel, myYLabel=yLabel):
+def GraphLabeling(title, myXLabel=xLabel, myYLabel=yLabel):
     """
 
     Parameters
@@ -78,7 +78,7 @@ def plot_graphs(url):
         plt.plot(selective_years_data.columns[1:13], selective_years_data.values[0][1:13], label = f'year{Years}')
 
     # calling the function and passing arguments
-    GraphPlotting(linePlotTitle)
+    GraphLabeling(linePlotTitle)
    
     
     
@@ -90,7 +90,7 @@ def plot_graphs(url):
     rainfall_data.drop(['year', 'win', 'spr', 'sum', 'aut', 'ann'], axis=1).boxplot()
 
     # calling the function and passing arguments
-    GraphPlotting(boxPlotTitle)
+    GraphLabeling(boxPlotTitle)
 
    
     
@@ -102,7 +102,7 @@ def plot_graphs(url):
     plt.hist(rainfall_data['ann'], bins=20, color='lightblue', edgecolor='black')
     
     # calling the function and passing arguments
-    GraphPlotting(histoPlotTitle, 'Annual Rainfall (mm)', 'Frequency')
+    GraphLabeling(histoPlotTitle, 'Annual Rainfall (mm)', 'Frequency')
 
     
 #url of the data
