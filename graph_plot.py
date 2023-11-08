@@ -107,13 +107,16 @@ def plot_graphs(url):
     plt.hist(rainfall_data['ann'], bins=20, color='lightblue', edgecolor='black')
     
     # setting lables and title and show legend
+    """
     plt.xlabel('Annual Rainfall (mm)')
     plt.ylabel('Frequency')
     plt.title('A Histogram Showing Distribution of Annual Rainfall in the UK')
     
     # show the plot
     plt.show()
-    
+    """
+    GraphPlotting(histoPlotTitle, 'Annual Rainfall (mm)', 'Frequency')
+
     
 #url of the data
 url = "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/datasets/Rainfall/date/UK.txt"
