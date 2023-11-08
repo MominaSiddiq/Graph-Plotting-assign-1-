@@ -10,7 +10,7 @@ Created on Thu Nov  2 18:14:36 2023
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# variables declaration and assignment
+# variables declaration and assignment 
 xLabel = "Month"
 yLabel = "Rainfall (mm)"
 linePlotTitle = 'Monthly Rainfall in UK for year 2019-2023'
@@ -19,7 +19,7 @@ histoPlotTitle = 'A Histogram Showing Distribution of Annual Rainfall in the UK'
 
 
 # defining a function for setting labels and show legends
-def GraphLabeling(title, myXLabel=xLabel, myYLabel=yLabel):
+def GraphLabeling(title, myXLabel = xLabel, myYLabel = yLabel):
     """
 
     Parameters
@@ -42,7 +42,7 @@ def GraphLabeling(title, myXLabel=xLabel, myYLabel=yLabel):
     plt.ylabel(myYLabel)
     plt.title(title)
     plt.legend()
-    plt.show()
+    plt.show()  
 
 
 # define a function 
