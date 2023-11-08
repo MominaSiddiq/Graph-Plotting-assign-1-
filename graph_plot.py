@@ -58,19 +58,7 @@ def plot_graphs(url):
     for Years in selective_years :
         selective_years_data = filtered_years_data[filtered_years_data['year'] == Years]
         plt.plot(selective_years_data.columns[1:13], selective_years_data.values[0][1:13], label = f'year{Years}')
-   
-    """
-    # setting lables and title and show legend
-    plt.xlabel('Months')
-    plt.ylabel('Rainfall (mm)')
-    plt.title('Monthly Rainfall in UK for year 2019-2023')
-    plt.legend()
 
-    # show the plot
-    plt.show()
-
-    """
-    
     # calling the function and passing arguments
     GraphPlotting(linePlotTitle)
    
@@ -82,18 +70,7 @@ def plot_graphs(url):
    
     # making a box plot for each month by dropping all other columns 
     rainfall_data.drop(['year', 'win', 'spr', 'sum', 'aut', 'ann'], axis=1).boxplot()
-    
-    # setting lables and title and show legend
-    """
-    plt.xlabel('Months')
-    plt.ylabel('Rainfall (mm)')
-    plt.title('A Box Plot Showing Monthly Rainfall Distribution in the UK')
-    plt.xticks(rotation = 45)
-    plt.grid(True)
-   
-    # show the plot
-    plt.show()
-    """
+
     # calling the function and passing arguments
     GraphPlotting(boxPlotTitle)
 
@@ -106,15 +83,7 @@ def plot_graphs(url):
     #making a histogram for annual rainfall 
     plt.hist(rainfall_data['ann'], bins=20, color='lightblue', edgecolor='black')
     
-    # setting lables and title and show legend
-    """
-    plt.xlabel('Annual Rainfall (mm)')
-    plt.ylabel('Frequency')
-    plt.title('A Histogram Showing Distribution of Annual Rainfall in the UK')
-    
-    # show the plot
-    plt.show()
-    """
+    # calling the function and passing arguments
     GraphPlotting(histoPlotTitle, 'Annual Rainfall (mm)', 'Frequency')
 
     
