@@ -13,9 +13,9 @@ import matplotlib.pyplot as plt
 # variables declaration and assignment
 xLabel = "Month"
 yLabel = "Rainfall (mm)"
-linePlotTitle = 'Monthly Rainfall in UK for year 2019-2023'
-boxPlotTitle = 'A Box Plot Showing Monthly Rainfall Distribution in the UK'
-histoPlotTitle = 'A Histogram Showing Distribution of Annual Rainfall in the UK'
+linePlotTitle = 'Monthly Rainfall in UK for year 2019-2023(MultipleLine Plot)'
+boxPlotTitle = 'Monthly Rainfall Distribution in the UK(Box Plot)'
+histoPlotTitle = 'Distribution of Annual Rainfall in the UK(Histogram)'
 
 
 # defining a function for setting labels and show legends
