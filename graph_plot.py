@@ -17,6 +17,7 @@ linePlotTitle = 'Monthly Rainfall in UK for year 2019-2023'
 boxPlotTitle = 'A Box Plot Showing Monthly Rainfall Distribution in the UK'
 histoPlotTitle = 'A Histogram Showing Distribution of Annual Rainfall in the UK'
 
+
 # defining a function for setting labels and show legends
 def GraphLabeling(title, myXLabel=xLabel, myYLabel=yLabel):
     """
@@ -42,6 +43,7 @@ def GraphLabeling(title, myXLabel=xLabel, myYLabel=yLabel):
     plt.title(title)
     plt.legend()
     plt.show()
+
 
 # define a function 
 def plot_graphs(url):
