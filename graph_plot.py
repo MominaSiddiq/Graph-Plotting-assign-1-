@@ -84,6 +84,7 @@ def plot_graphs(url):
     rainfall_data.drop(['year', 'win', 'spr', 'sum', 'aut', 'ann'], axis=1).boxplot()
     
     # setting lables and title and show legend
+    """
     plt.xlabel('Months')
     plt.ylabel('Rainfall (mm)')
     plt.title('A Box Plot Showing Monthly Rainfall Distribution in the UK')
@@ -92,7 +93,10 @@ def plot_graphs(url):
    
     # show the plot
     plt.show()
-    
+    """
+    # calling the function and passing arguments
+    GraphPlotting(boxPlotTitle)
+
    
     
     # HISTOGRAM
