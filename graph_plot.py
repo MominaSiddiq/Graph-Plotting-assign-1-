@@ -45,7 +45,7 @@ def GraphLabeling(title, myXLabel = xLabel, myYLabel = yLabel):
     plt.show()  
 
 
-# define a function 
+# defining a function to plot graphs on the given data set 
 def plot_graphs(url):
     """
 
@@ -56,16 +56,19 @@ def plot_graphs(url):
 
     Returns
     -------
-    fetches the data from the url and plot graphs on it.
+    Nothing returns
+    this function fetches the data from the url and plot graphs on it.
 
     """
     
     # fetch the data from url and read it into a DataFrame and print it
-    rainfall_data = pd.read_csv(url, skiprows=5, delim_whitespace=True)
+    rainfall_data = pd.read_csv(url, skiprows = 5, delim_whitespace = True)
     print(rainfall_data)
     
-    
-    # MULTIPLE-LINE PLOT
+    # <-------------------------------------------------------------->
+    # <--------------------- MULTIPLE-LINE PLOT---------------------->
+    # <-------------------------------------------------------------->    
+
     # from years 2019 to 2023 comparing the rainfall monthly
     selective_years = list(range(2019, 2024))
     
@@ -74,29 +77,30 @@ def plot_graphs(url):
     
     # plotting multiple line graph for selective years and comparing the rainfall monthly 
     plt.figure(figsize = (10, 6))
-    
-    for Years in selective_years :
+    for Years in selective_years:
         selective_years_data = filtered_years_data[filtered_years_data['year'] == Years]
         plt.plot(selective_years_data.columns[1:13], selective_years_data.values[0][1:13], label = f'year{Years}')
-
+    
     # calling the function and passing arguments
     GraphLabeling(linePlotTitle)
-   
     
-    
-    # BOX PLOT
+    # <-------------------------------------------------------------->    
+    # <----------------------- BOX PLOT ----------------------------->
+    # <-------------------------------------------------------------->    
+
     # Plotting a Box plot for monthly rainfall distribution for different years 
     plt.figure(figsize = (10, 6))
    
     # making a box plot for each month by dropping all other columns 
     rainfall_data.drop(['year', 'win', 'spr', 'sum', 'aut', 'ann'], axis=1).boxplot()
-
+    
     # calling the function and passing arguments
     GraphLabeling(boxPlotTitle)
-
-   
-    
-    # HISTOGRAM
+       
+    # <-------------------------------------------------------------->
+    # <-------------------- HISTOGRAM PLOT -------------------------->
+    # <-------------------------------------------------------------->
+  
     # For annual rainfall distribution plotting Histogram 
     plt.figure(figsize = (10, 6))
     
@@ -104,10 +108,10 @@ def plot_graphs(url):
     plt.hist(rainfall_data['ann'], bins=20, color='lightblue', edgecolor='black')
     
     # calling the function and passing arguments
-    GraphLabeling(histoPlotTitle, 'Annual Rainfall (mm)', 'Frequency')
-
+    GraphLabeling(histoPlotTitle, 'Annual Rainfall (mm)', 'Frequency')    
     
-#url of the data
+    
+# Url of data
 url = "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/datasets/Rainfall/date/UK.txt"
 
 #calling the function and passing the argument
