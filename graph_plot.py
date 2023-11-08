@@ -19,6 +19,24 @@ histoPlotTitle = 'A Histogram Showing Distribution of Annual Rainfall in the UK'
 
 # defining a function for setting labels and show legends
 def GraphPlotting(title, myXLabel=xLabel, myYLabel=yLabel):
+    """
+
+    Parameters
+    ----------
+    title : str
+        title containing the title of graph.
+    myXLabel : str
+         contains the xlabel of graph and assigned a by default value to it.
+    myYLabel : str
+        contains the ylabel of graph and assigned a by default value to it. 
+
+    Returns
+    -------
+    Nothing returns
+    this function sets labels and show legends and graph.
+
+    """
+    
     plt.xlabel(myXLabel)
     plt.ylabel(myYLabel)
     plt.title(title)
