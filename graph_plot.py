@@ -55,6 +55,22 @@ def GraphLabelingAndShow(title, myXLabel = xLabel, myYLabel = yLabel):
 
 
 def PlotFigure(xSize = figX_Size, ySize = figY_Size):
+    """
+
+    Parameters
+    ----------
+    xSize : int
+    ySize: int
+        containing x and y size of the figure of plot.
+
+    Returns
+    -------
+    Nothing returns
+    this function taking two int values for sizes  
+    and ploting figure.
+
+    """
+    
     plt.figure(figsize = (xSize, ySize))
 
 
