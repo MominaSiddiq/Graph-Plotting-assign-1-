@@ -30,7 +30,9 @@ figY_Size = 6
 # defining a function for setting labels and show legends
 def GraphLabelingAndShow(title, myXLabel = xLabel, myYLabel = yLabel):
     """
-
+    
+    This function sets labels and show legends and graph.
+    
     Parameters
     ----------
     title : str
@@ -42,8 +44,7 @@ def GraphLabelingAndShow(title, myXLabel = xLabel, myYLabel = yLabel):
 
     Returns
     -------
-    Nothing returns
-    this function sets labels and show legends and graph.
+    None.
 
     """
 
@@ -58,6 +59,9 @@ def GraphLabelingAndShow(title, myXLabel = xLabel, myYLabel = yLabel):
 def PlotFigure(xSize = figX_Size, ySize = figY_Size):
     """
 
+    This function taking two int values for sizes  
+    and ploting figure.
+
     Parameters
     ----------
     xSize : int
@@ -66,9 +70,7 @@ def PlotFigure(xSize = figX_Size, ySize = figY_Size):
 
     Returns
     -------
-    Nothing returns
-    this function taking two int values for sizes  
-    and ploting figure.
+    None.
 
     """
     
@@ -83,6 +85,8 @@ def PlotFigure(xSize = figX_Size, ySize = figY_Size):
 def plot_line_graph(data):
     """
 
+    This function taking data and plot line graph on it.
+
     Parameters
     ----------
     data : csv
@@ -90,9 +94,8 @@ def plot_line_graph(data):
 
     Returns
     -------
-    Nothing returns
-    this function taking data and plot line graph on it.
-
+    None.
+    
     """
 
     # from years 2019 to 2023 comparing the rainfall monthly
@@ -124,6 +127,8 @@ def plot_line_graph(data):
 def box_plot(data):
     """
 
+    This function taking data and plot box plot on it.
+ 
     Parameters
     ----------
     data : csv
@@ -131,8 +136,7 @@ def box_plot(data):
 
     Returns
     -------
-    Nothing returns
-    this function taking data and plot box plot on it.
+    None.
 
     """
 
@@ -157,6 +161,8 @@ def box_plot(data):
 def plot_histogram(data):
     """
 
+    This function taking data and plot histogram on it.
+
     Parameters
     ----------
     data : csv
@@ -164,8 +170,7 @@ def plot_histogram(data):
 
     Returns
     -------
-    Nothing returns
-    this function taking data and plot histogram on it.
+    None.
 
     """
 
@@ -186,15 +191,16 @@ def plot_histogram(data):
 def FetchingDataFromURL():
     """
 
+    This function fetch the data from url and read it 
+    into a DataFrame and print it.
+
     Parameters
     ----------
-    No parameters
+    None.
 
     Returns
     -------
-    Nothing returns
-    this function fetch the data from url and read it 
-    into a DataFrame and print it
+    None.
 
     """
     
@@ -207,6 +213,9 @@ def FetchingDataFromURL():
 def GraphPlot(data):
     """
 
+    This function calling three types of graph plotting functions 
+    and passing data as an argument.
+
     Parameters
     ----------
     data : csv
@@ -214,9 +223,8 @@ def GraphPlot(data):
 
     Returns
     -------
-    Nothing returns
-    this function calling three types of graph plotting functions 
-    and passing data as an argument
+    None.
+    
 
     """
    
