@@ -54,6 +54,7 @@ def GraphLabelingAndShow(title, myXLabel = xLabel, myYLabel = yLabel):
     plt.show()
 
 
+
 def PlotFigure(xSize = figX_Size, ySize = figY_Size):
     """
 
@@ -219,7 +220,6 @@ def GraphPlot(data):
 
     """
    
-    # calling the functions and passing the argument
     plot_line_graph(data)
     box_plot(data)
     plot_histogram(data)
