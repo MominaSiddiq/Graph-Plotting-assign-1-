@@ -93,7 +93,7 @@ def plot_line_graph(data):
     for Years in selective_years:
         selective_years_data = filtered_years_data[filtered_years_data['year'] == Years]
         plt.plot(selective_years_data.columns[1:13],
-                 selective_years_data.values[0][1:13], label=f'year{Years}')
+                 selective_years_data.values[0][1:13], label = f'year{Years}')
 
     # calling the function for labelling and showing graph
     GraphLabelingAndShow(linePlotTitle)
